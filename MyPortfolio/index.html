@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lalithkumar C | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <span class="logo-dot"></span>
+    <span class="nav-name">Lalithkumar C</span>
+  </div>
+
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <button class="btn-theme" onclick="toggleTheme()">🌙</button>
+</nav>
+
+<!-- HERO -->
+<section class="section hero">
+  <div class="hero-text">
+    <p class="hero-tag">Student · Developer · SKCET</p>
+    <h2>Hi, I'm <span class="accent">Lalithkumar C</span></h2>
+    <p class="hero-body">
+      Passionate student exploring programming, IoT, and software development.
+      I enjoy building real-world projects and improving my problem-solving skills.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn ghost">Contact Me</a>
+    </div>
+  </div>
+
+  <div class="hero-photo">
+    <div class="photo-ring">
+      <img src="profile.jpg" alt="Lalithkumar C">
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="card">
+    I am a student at Sri Krishna College of Engineering and Technology with a strong interest
+    in programming, IoT, and software development. I enjoy learning new technologies and
+    building practical solutions through projects.
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <h2 class="section-title">Skills</h2>
+  <div class="card">
+    <span class="pill">C Programming</span>
+    <span class="pill">Python</span>
+    <span class="pill">HTML</span>
+    <span class="pill">CSS</span>
+    <span class="pill">IoT</span>
+    <span class="pill">ESP32</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="card">
+    <h3>Student Attendance Management System</h3>
+    <p class="card-meta">C Language · ByteXL</p>
+    <p>
+      Console-based system to manage student attendance efficiently using C,
+      focusing on arrays, loops, conditions, and file handling.
+    </p>
+    <span class="pill small">C</span>
+    <span class="pill small">File Handling</span>
+  </div>
+
+  <div class="card">
+    <h3>IoT Based Smart Dustbin with Telegram Bot Alert</h3>
+    <p class="card-meta">ESP32 · IoT · Telegram Bot</p>
+    <p>
+      Smart dustbin that automatically opens using ultrasonic sensors and
+      sends alert messages via Telegram when the bin is full.
+    </p>
+    <span class="pill small">ESP32</span>
+    <span class="pill small">IoT</span>
+    <span class="pill small">Telegram Bot</span>
+  </div>
+</section>
+
+<!-- CERTIFICATES (ORDER FIXED HERE) -->
+
+<section class="section" id="certificates">
+  <h2 class="section-title">Certificates</h2>
+  <p class="section-subtitle">Courses & workshops completed</p>
+  
+  <div class="cert-grid">
+    
+    <figure class="cert-card">
+      <img src="cert-isro-thermal-remote-sensing.jpg" alt="ISRO Certificate">
+      <figcaption>
+        ISRO – Advances in Thermal Infrared Remote Sensing for Ecological Studies
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card">
+      <img src="cert-gcloud-genai.jpg" alt="Google Cloud Gen AI">
+      <figcaption>Google Cloud · Coursera – Introduction to Generative AI</figcaption>
+    </figure>
+    
+    
+    <figure class="cert-card">
+      <img src="cert-aws-data-eng.jpg" alt="AWS Data Engineering">
+      <figcaption>AWS – Data Engineering on AWS (Foundations)</figcaption>
+    </figure>
+    
+    <figure class="cert-card">
+      <img src="cert-aws-job-roles.jpg" alt="AWS Job Roles">
+      <figcaption>AWS – Job Roles in the Cloud</figcaption>
+    </figure>
+
+    <figure class="cert-card">
+      <img src="cert-cpr-awareness.jpg" alt="CPR Awareness">
+      <figcaption>
+        Ministry of Youth Affairs & Sports – CPR Awareness Week Quiz
+      </figcaption>
+    </figure>
+
+    <figure class="cert-card">
+      <img src="cert-aws-genai-art.jpg" alt="AWS Generative AI">
+      <figcaption>AWS – Introduction to Generative AI: Art of the Possible</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <h2 class="section-title">Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:lalithkumarc09@gmail.com">lalithkumarc09@gmail.com</a></p>
+    <p>Phone: +91 76048 99371</p>
+    <p>
+      <a href="https://www.linkedin.com/in/lalith-kumar-388b6a37b" target="_blank">LinkedIn</a> ·
+      <a href="https://github.com/lalithkumarc09-c" target="_blank">GitHub</a> ·
+      <a href="https://www.instagram.com/lalith.offx.07" target="_blank">Instagram</a>
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  © <span id="year"></span> Lalithkumar C
+</footer>
+
+<script>
+  document.getElementById("year").innerText = new Date().getFullYear();
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+</body>
+</html>
